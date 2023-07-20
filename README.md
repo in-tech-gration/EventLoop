@@ -76,9 +76,11 @@
     <li><a href="/Education/afdemp">List of Resources for Web Developers</a> (from the AFDEMP* Coding Bootcamp [<a href="https://www.afdemp.org/bootcamp/">*Alliance for Digital Employability</a>])</li>
     <li><a href="/learn/react"><strong>Learn React.JS</strong></a></li>
     <li><a href="/learn/node"><strong>Learn Node.JS</strong></a></li>
+    <li><a href="/learn/sql">Learn SQL (curated list of resources)</a></li>
+    <li>-- Work in Progress --</li>
     <li><a href="/learn/MachineLearning"><strong>Learn Machine Learning</strong>: A list of resources <strong>(Work in progress)</strong> </a></li>
     <li><a href="/learn/LearnFabricJS">Learn Fabric.JS</a> (Coming soon...)</li>
-    <li><a href="/learn/sql">Learn SQL (curated list of resources)</a></li>
+    <li><a href="/learn/python">Learn Python <strong>(Work in progress)</strong></a></li>
   </ul>
 </details>
 
