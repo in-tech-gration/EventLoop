@@ -1,7 +1,4 @@
-# EventLoop
-:heart: **Passionate about Technology & Tech Education**
-
-![EventLoop Logo](./assets/img/logo.jpg)
+# LearnX
 
 <details>
   <summary>Presentations</summary>
