@@ -1,0 +1,150 @@
+doctype html
+
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  title EventLoop | JavaScript Fundamentals
+  link(rel='stylesheet' href='css/reset.css')
+  link(rel='stylesheet' href='css/reveal.css')
+  link(rel='stylesheet' href='css/theme/simple.css')
+  // Theme used for syntax highlighting of code
+  link(rel='stylesheet' href='lib/css/monokai.css')
+  // Bootstrap 4
+  // <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  link(rel='stylesheet' href='./css/bootstrap-grid.min.css')
+  // Font Awesome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+  // Poppins Font
+  link(href='https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700' rel='stylesheet')
+  link(rel='stylesheet' href='./css/custom.css')
+  // Printing and PDF exports
+  script.
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+body 
+  .reveal
+    .slides
+      // INTRO TITLES
+      section.typography
+        .row
+          .col-10.offset-1.text-left
+            h1
+              | JavaScript 
+              span.font-weight-light Fundamentals
+            p.text-left.text-medium
+              | By Kostas Minaidis | 
+              strong 2019
+      // WEB TRIO
+      section.typography
+        section
+          h3.font-weight-light.pb-5.mb-5 The World Wide Web (www)
+          .row.mt-5
+            .col
+              h3 HTML
+            .col
+              h3 CSS
+            .col
+              h3 JS
+          img(src='./img/web-trio.svg' alt='')
+        section
+          .row
+            .col-10.offset-1
+              p
+                | JavaScript along with HTML and CSS form a triad of cornerstone technologies for creating web pages and web applications.
+              img(src='./img/web-trio.svg' alt='')
+      section.typography
+        section
+          h6 typography
+          .font-family
+            .font-weight-bold
+              h1 Aa
+              h4 Poppins Bold
+            .font-weight-medium
+              h1 Aa
+              h4 Poppins Medium
+            .text-light
+              h1 Aa
+              h4 Poppins Light
+        section
+          .font-example
+            .font-example__headline
+              h6.subheader Headlines
+              h1 h1 headline
+              h2 h2 headline
+              h3 h3 headline
+              h4 h4 headline
+              h5 h5 headline
+              h6 h6 headline
+            .font-example__bodytext
+              h6.subheader Body Text
+              p
+                | I think we need to start from scratch. Jazz it up a little bit- use a funky color like purple.
+              p.text-medium
+                strong
+                  | Can you add a bit of pastel pink and baby blue because the purple alone looks too fancy.
+              p.text-small
+                em
+                  | Make the purple more well, purple-er. Try a more powerful colour, it needs to be the same, but totally different.
+      // ABOUT ME
+      section.typography
+        section
+          h6 ABOUT ME
+          .row
+            .col
+              h4.font-weight-medium
+                a.btn(href='https://github.com/kostasx/') GitHub
+            .col
+              h4.font-weight-medium
+                a.btn(href='https://twitter.com/kostas_mns') Twitter
+            .col
+              h4.font-weight-medium
+                a.btn(href='https://www.linkedin.com/in/kostas-minaidis/') Linkedin
+
+  // REVEALJS CONFIGURATION
+  script(src='js/reveal.js')
+  script.
+    // Configure Key Bindings:
+    Reveal.configure({
+      keyboard: {
+        // Key: 'e'
+        69: function() {}
+      }
+    });
+    Reveal.initialize({
+      // controls: true,
+      // progress: true,
+      // center: true,
+      // hash: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      maxScale: 1,
+      minScale: 1,
+      history: true,
+      dependencies: [
+        {
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true
+        },
+        {
+          src: 'plugin/search/search.js',
+          async: true
+        },
+        {
+          src: 'plugin/zoom-js/zoom.js',
+          async: true
+        }
+      ]
+    });
